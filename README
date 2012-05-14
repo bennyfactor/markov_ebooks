@@ -1,0 +1,23 @@
+PHP Markov_ebooks twitter client
+v0.2
+
+This PHP script is designed to take the recent tweets from a particular twitter handle, run them through a markov chain generator, and regugitate them as a twitter bot, akin to horse_ebooks. 
+
+Right now all it does is squirt prospective _ebooks tweets onto STDOUT when run on the command line. Of course, I will be adding twitter oauth nonsense at a later date so this may actually tweet.
+
+configuration options are currently available in the first two lines of main.php
+
+base_tweetist = the twitter account to use as a seed for your bot
+tweet_length = number of characters for the tweet (useful if you want to include hash tags)
+randomness = not a very useful variable, only setting 3 or 4 produces a legible-yet random output
+
+the core functionality (grabbing tweets, the markov chain) comes from http://f6design.com/journal/2010/10/07/display-recent-twitter-tweets-using-php/ and http://www.decontextualize.com/teaching/ppp/php-classes-web-templates/ 
+
+TODO:
+
+*Twitter oauth integration (so this can tweet)
+*crontab/whatever instructions (so this can tweet automatically)
+*a better markov chain function (current always begins with first word in the seed string)
+
+copyright (c) 2012, B.H. Lamb
+This software is released in accordance with the so-called ISC license, a simplified BSD-type open software license. To read its terms visit http://opensource.org/licenses/ISC 
