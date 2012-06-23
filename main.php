@@ -13,7 +13,7 @@
 */
 
 /* configuration for this script */
-$base_tweetist ='twitter'; //twitter name goes here, e.g. josecanseco
+$base_tweetist ='bennyfactor'; //twitter name goes here, e.g. josecanseco
 $cache_location = './'.$base_tweetist.'.txt'; 
 $tweet_length = 100; // remember max 140 chars
 $randomness = 4; //(1-5, 1 just prints random characters, 5 is hardly a markov chain
